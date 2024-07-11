@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-QUEEN VISUALISER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+
+    #control-panel{
+
+    }
+</style>
+<body>
+    <div id="control-panel">
+        <input type="number" id="num_sq" placeholder="no. of Queens" min="4" required>
+        <input type="number" id="size_sq" placeholder="size" style="display: none;">
+        <button id="sol-btn" class="light">SOLVE<i class="fas fa-sync-alt"></i></button>
+        <button id="next-sol-btn" class="dark">Next Solution<i class="fas fa-step-forward"></i></button>
+        <br><br>
+        <span>Solution </span>
+        <span id="sol-num">0</span>
+    </div>
+      
+    <div style="background: #232931; position: relative;">
+        <div id="chessboard">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
